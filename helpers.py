@@ -3,7 +3,6 @@ from passlib.context import CryptContext
 import models
 from sqlalchemy.orm import Session
 from fastapi_jwt_auth import AuthJWT
-import uuid
 from database import get_db
 
 
