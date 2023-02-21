@@ -133,3 +133,11 @@ async def verify_email_code(key:str, db:Session=Depends(get_db)):
     tok = key
     dd = verification_email(token=tok,db=db,model=models.UserModel)
     return "email verified" if dd else "not verified"
+
+
+
+#reset password
+@router.post("/reset-password")
+# schemas.
+async def reset_password(request:schemas.resetPassword):
+    pass
